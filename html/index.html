@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div><img src="../img/Logo-portfolio.png" alt="logo" class="logo-port"></div>
+    <nav>
+      <ul>
+        <li><a href="#" id="about-me-btn">A propos de moi</a></li>
+        <li><a href="#">Projets</a></li>
+        <li><a href="../pdf/CV Stage 3ème année - Bal Zeinabou .pdf" download="CV_Stage - BAL.pdf">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+        <h1>Je suis<span> Zeinabou Bal</span>, étudiante en BUT MMI.</h1>
+        <p>Découvrez mes projets réalisés avec passion et créativité.</p>
+      </section>
+
+    <aside class="projects">
+      <h3>Mes projets</h3>
+      <ul class="project-list">
+        <li>
+          <a href="../html/Page_dev.html">Développement web</a>
+        </li>
+        <li>
+          <a href="../html/Page_UI-UX.html">UX/UI</a>
+        </li>
+        <li>
+          <a href="../html/Page_graphime.html">Graphisme</a>
+        </li>
+        <li>
+          <a href="../html/Page_3D.html">3D</a>
+        </li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- Fenêtre pop-up pour A propos de moi -->
+<div class="about-me-popup" id="about-me-popup">
+  <div class="popup-content">
+    <button class="close-btn" id="close-btn">×</button>
+    <div class="popup-body">
+      <div class="popup-image">
+        <!-- Ici tu peux mettre ta photo -->
+        <img src="../img/profcv_port.jpg" alt="Ma photo" width="150px">
+      </div>
+      <p class="fenep">Je m'appelle Bal Zeinabou, j'ai 19 ans et je suis actuellement en deuxième année de BUT MMI (Métiers du Multimédia et de l'Internet), parcours Développement Web et Dispositifs Interactifs.
+        <br>Cette formation pluridisciplinaire m’a permis d’acquérir des compétences variées dans des domaines tels que le développement web, l’audiovisuel et le graphisme.
+        
+        <br>Au cours de ces deux années, j’ai approfondi mes connaissances en développement web grâce à des cours, des projets concrets et un stage en entreprise. Ces expériences m’ont permis de travailler en équipe, de résoudre des problèmes complexes et d'améliorer ma rigueur professionnelle.
+        
+        <br>Passionnée par le domaine du développement web, je suis déterminée à continuer à apprendre et à relever de nouveaux défis pour évoluer dans ce secteur.
+      </p>      
+    </div>
+    <!-- Footer avec texte centré -->
+    <div class="popup-footer">Présentation</div>
+  </div>
+</div>
+
+  <script src="../js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,519 @@
+/* styles.css */
+body {
+     margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+   background: linear-gradient(
+    90deg,
+    #fcf5f3 100%,
+    #fdf6f3 40%,
+    #fcf5f3 100%
+  );  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo-port {
+    width: auto;
+    height: 65px;
+  } 
+  
+* {
+  font-family: 'Commissioner', sans-serif;
+}
+
+  
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    margin: 0;
+  }
+  
+  nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #3f2c2c;
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding-bottom: 5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #604747; /* Couleur du soulignement (orange) */
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    color: #604747; /* Changement de couleur du texte */
+    transform: scale(1.1); /* Agrandissement léger du texte */
+  }
+  
+  nav ul li a:hover::after {
+    transform: scaleX(1); /* Animation du soulignement */
+  }
+  
+/* Fenêtre pop-up *****************************************************************************************************/
+/******************************************************************************************************************************/
+ /* Fenêtre pop-up */
+ .about-me-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%; /* Conserver la hauteur à 100% */
+  background-color: white;
+  box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 30px;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out; /* Transition fluide */
+  overflow-y: auto; /* Permet le défilement */
+  opacity: 0; /* Rend l'ouverture fluide */
+  padding-bottom: 50px; /* Marge en bas pour le footer */
+}
+
+/* Effet d'apparition fluide */
+.about-me-popup.active {
+transform: translateX(0);
+opacity: 1;
+}
+
+/* Contenu de la pop-up */
+.popup-content {
+display: flex;
+flex-direction: column;
+align-items: center;
+height: auto;
+}
+
+/* Image bien centrée avec halo */
+.popup-image {
+display: flex;
+justify-content: center;
+width: 100%;
+margin-bottom: 20px;
+}
+
+.popup-image img {
+border-radius: 50%;
+border: 2px solid #ddd;
+width: 120px;
+height: auto;
+object-fit: cover;
+box-shadow: 0 0 20px rgba(255, 193, 202, 0.849); /* Halo beige rosé */
+
+/* Supprimer image-rendering qui peut altérer la qualité */
+image-rendering: auto;
+
+/* Améliorer la netteté sur les écrans haute densité */
+transform: translateZ(0); /* Peut améliorer le rendu sur certains navigateurs */
+filter: contrast(1.1) saturate(1.1); /* Légère amélioration du contraste et de la saturation */
+}
+
+.popup-body {
+text-align: justify;
+max-width: 90%;
+font-size: 1.1rem;
+line-height: 1.8;
+color: #333;
+padding: 0 20px;
+overflow-y: auto; /* Permet le scroll si le texte est trop long */
+}
+
+/* Bouton de fermeture */
+.close-btn {
+position: absolute;
+top: 15px;
+right: 20px;
+background: none;
+border: none;
+font-size: 1.5rem;
+cursor: pointer;
+color: #555;
+}
+
+/* Footer */
+.popup-footer {
+text-align: center;
+font-size: 1.2rem;
+font-weight: 600;
+margin-top: 20px;
+color: #555;
+}
+
+.fenep {
+margin: 20px;
+font-size: 1rem;
+color: #1e1a1a;
+margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+.titre3D_img {
+  display: block; /* Assure que l'élément prend toute la largeur possible */
+width: 480px;
+height: auto;
+margin: 0 auto; /* Centre horizontalement */
+margin-top: 50px;
+margin-bottom: 60px;
+}
+
+.phraseaccr2 {
+  font-size: 17px;
+    width: 85%;
+    max-width: 900px;
+
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+
+    display: block;
+    margin: 0 auto 40px auto;
+    padding: 18px 20px;
+    line-height: 1.8;
+    color: #1e1a1a;
+
+    background-color:  #fcf5f3bb;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+ }
+
+
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* === Galerie : grid 2 par ligne === */
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+    width: 100%;
+    justify-items: center;
+    align-items: start;
+    padding-bottom: 10px;
+  }
+
+  /* === Card complète === */
+  .image-card {
+    width: 100%;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,245,247,0.8));
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    overflow: hidden;
+    border: 2px solid rgba(0,0,0,0.06);
+
+    /* transition hover cadre (ajout demandé) */
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    
+  }
+
+  /* Hover du cadre entier (ajout) */
+  .image-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  }
+
+  /* === Frame qui contient l'image : taille fixe et uniforme === */
+  .image-frame {
+  width: 100%;
+  height: 300px;               /* taille IDENTIQUE pour tous */
+  padding: 15px;               /* marge entre image et cadre */
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fffcfc;         /* fond (modifiable) */
+  overflow: hidden;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+  /* === Image : centrée, cropée pour remplir le cadre, même taille toujours === */
+  .image-frame img {
+  max-width: 100%;
+  max-height: 100%;
+
+  object-fit: contain;         /* IMPORTANT */
+  object-position: center;
+
+  transition: transform 0.3s ease;
+}
+
+  
+
+ /*  effet au survol  sur img
+  .image-frame:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.image-frame:hover img {
+  transform: scale(1.06);
+}*/
+
+  /* === Footer interne de la card : titre + bouton === */
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    gap: 8px;
+    background: #f7eeeecf;
+  }
+
+  .card-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #222;
+    text-align: left;
+  }
+
+  .card-btn {
+    text-decoration: none;
+    font-size: 0.85rem;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: rgba(134,92,92,0.12);
+    color: #604747;
+    border: 1px solid rgba(96,71,71,0.12);
+    font-weight: 700;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    align-self: flex-end;
+  }
+
+  .card-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(96,71,71,0.08);
+  }
+
+  .image-card {
+    min-height: 320px;
+  }
+
+  @media (max-width: 900px) {
+    .image-gallery { grid-template-columns: 1fr; }
+    .image-card { max-width: 760px; }
+    .container { padding: 22px; }
+    .titredev_img { width: 320px; }
+  }
+
+
+
+
+
+  
+ /* Styles pour la modale (inchangés mais fonctionnels) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    margin: 5% auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    position: relative;
+  }
+
+  .modal-description {
+    width: 90%;
+    max-width: 900px;
+
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+
+    display: block;
+    margin: 0 auto 40px auto;
+    padding: 18px 20px;
+    line-height: 1.8;
+    color: #ecd6d6;
+
+    border-radius: 8px;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  button.prev { left: 10px; }
+  button.next { right: 10px; }
+  button.prev:hover, button.next:hover { background-color: rgba(0,0,0,0.8); }
+
+
+
+
+
+
+
+  footer {
+    padding: 20px 0;
+    color: #3f2c2c;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contact-info {
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .contact-info p { margin: 5px 0; }
+
+  .right {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .right::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #865c5c;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .right:hover {
+    color: #865c5c;
+    transform: scale(1.05);
+  }
+
+  .right:hover::after { transform: scaleX(1); }
+
+
+
+  .footer-end {
+  width: 100%;
+  background-color: #a37a7aa1; /* rose foncé */
+  padding: 3px 0;
+}
+
+.footer-end-content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-left img {
+  width: 15px;
+  height: auto;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-left a:hover img {
+  transform: scale(1.15);
+  opacity: 0.8;
+}
+
+.footer-right {
+  color: #ffffff;
+  font-size: 0.70rem;
+  font-weight: 500;
+  text-align: right;
+}

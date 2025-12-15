@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="../css/Page_3D.css">
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="../html/index.html"><div><img src="../img/Logo-portfolio2.png" alt="logo" class="logo-port"></div></a>
+    <nav>
+      <ul>
+        <li><a href="#" id="about-me-btn">A propos de moi</a></li>
+        <li><a href="../html/index.html">Projets</a></li>
+        <li><a href="../pdf/CV Stage 3ème année - Bal Zeinabou .pdf" download="CV_Stage - BAL.pdf">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1><img src="../img/titre3D_img.png" alt="titre3D_img" class="titre3D_img"></h1>
+
+<div class="container">
+    <div class="phraseaccr2"> 
+      Travailler en 3D est un nouveau défi pour moi, et chaque projet me permet d'explorer davantage les possibilités de cette technologie. Bien que je ne connaissais pas la 3D au début, étant une personne passionnée par le dessin, j'ai rapidement trouvé un lien avec ce domaine. Dès mes premiers pas en 3D, j'ai accroché et je suis désormais impatiente d'explorer plus en profondeur cet univers. Vous trouverez quelques-uns des projets que j'ai réalisés durant ma formation. <br>Cliquez pour en savoir plus.
+    </div> 
+
+  
+
+<!-- Section des images : 2 cards par ligne -->
+      <div class="image-gallery">
+
+        <!-- CARD 1 () -->
+<div class="image-card"
+     data-images='["../img/3D1.jpg","../img/3D2.jpg", "../img/3D5.png", "../img/3D6.png"]'
+     data-desc="Dans le cadre de ce projet en 3D, j'ai créé un set de jardin en utilisant le logiciel Blender. C'était ma première expérience avec cet outil, et j'ai pu explorer la modélisation 3D en apprenant à créer des éléments tels que des plantes, des meubles et des accessoires de jardin. Ce projet m'a permis de me familiariser avec l'interface de Blender, les outils de modélisation, ainsi que les techniques de texturisation et d'éclairage. C'était une expérience enrichissante qui m'a aidée à développer mes compétences en 3D et à mieux comprendre les processus créatifs derrière la création de scènes réalistes.">
+  <div class="image-frame">
+    <img src="../img/3D1.jpg" alt="Projet dev">
+  </div>
+  <div class="card-footer">
+    <div class="card-title">Projet pratique</div>
+    <button class="card-btn" type="button">En savoir plus</button>
+  </div>
+</div>
+
+<!-- CARD 2 (Projet dev) -->
+<div class="image-card">
+  <div class="image-frame">
+    <a href="https://bzei.github.io/Berimbau-project/"
+       target="_blank"
+       rel="noopener"
+       class="image-link">
+      <img src="../img/imgsiteberimbau.png" alt="Projet Berimbau">
+    </a>
+  </div>
+  <div class="card-footer">
+    <div class="card-title">Projet Instrument historique : Berimbau</div>
+
+    <a href="https://bzei.github.io/Berimbau-project/"
+       target="_blank"
+       rel="noopener"
+       class="card-btn">
+      Visiter le site
+    </a>
+  </div>
+</div>
+
+
+
+      </div>
+</div>
+
+
+
+
+    <!-- Modale -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-img" class="modal-content" src="" alt="Image">
+        <div id="modal-description" class="modal-description"></div>
+        
+        <!-- Navigation entre les images -->
+        <button class="prev" onclick="prevImage()">&#10094;</button>
+        <button class="next" onclick="nextImage()">&#10095;</button>
+      </div>
+
+  </main>
+
+
+
+
+<!-- Fenêtre pop-up pour A propos de moi -->
+<div class="about-me-popup" id="about-me-popup">
+  <div class="popup-content">
+    <button class="close-btn" id="close-btn">×</button>
+    <div class="popup-body">
+      <div class="popup-image">
+        <!-- Ici tu peux mettre ta photo -->
+        <img src="../img/profcv_port.jpg" alt="Ma photo" width="150px">
+      </div>
+      <p class="fenep">Je m'appelle Bal Zeinabou, j'ai 19 ans et je suis actuellement en deuxième année de BUT MMI (Métiers du Multimédia et de l'Internet), parcours Développement Web et Dispositifs Interactifs.
+        <br>Cette formation pluridisciplinaire m’a permis d’acquérir des compétences variées dans des domaines tels que le développement web, l’audiovisuel et le graphisme.
+        
+        <br>Au cours de ces deux années, j’ai approfondi mes connaissances en développement web grâce à des cours, des projets concrets et un stage en entreprise. Ces expériences m’ont permis de travailler en équipe, de résoudre des problèmes complexes et d'améliorer ma rigueur professionnelle.
+        
+        <br>Passionnée par le domaine du développement web, je suis déterminée à continuer à apprendre et à relever de nouveaux défis pour évoluer dans ce secteur.
+      </p>      
+    </div>
+    <!-- Footer avec texte centré -->
+    <div class="popup-footer">Présentation</div>
+  </div>
+</div>
+
+
+
+<footer>
+    <div class="footer-content">
+      <div>
+        <img src="../img/Logo-portfolio2.png" alt="logo" class="logo-port">
+      </div>
+      <div class="contact-info">
+        <p>Email : <a href="mailto:zeinaboubal05@gmail.com" class="right">zeinaboubal05@gmail.com</a></p>
+        <p>LinkedIn : <a href="https://www.linkedin.com/in/zeinabou-bal-286796294" target="_blank" class="right">Mon LinkedIn</a></p>
+      </div>
+    </div>
+  </footer>
+
+<!-- Footer final copyright -->
+<section class="footer-end">
+  <div class="footer-end-content">
+
+    <div class="footer-left">
+      <a href="https://github.com/BZei" target="_blank" aria-label="GitHub">
+        <img src="../img/logogithub.png" alt="GitHub">
+      </a>
+
+      <a href="https://www.linkedin.com/in/zeinabou-bal-286796294/" target="_blank" aria-label="LinkedIn">
+        <img src="../img/logolinkedin.png" alt="LinkedIn">
+      </a>
+    </div>
+
+    <div class="footer-right">
+      Copyright © 2024 | Zeinabou Bal | Tous droits réservés
+    </div>
+
+  </div>
+</section>
+  
+
+  <script src="../js/Page_3D.js"></script>
+</body>
+</html>
