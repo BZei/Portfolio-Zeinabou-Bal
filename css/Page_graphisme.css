@@ -640,3 +640,28 @@ margin-bottom: 60px;
     font-size: 1.1rem;
   }
 }
+
+
+
+
+
+
+/* ===== FIX LOGO MOBILE GRAPHISME ===== */
+@media screen and (max-width: 768px) {
+
+  .logo-port {
+    height: 50px;
+    max-width: 100%;
+  }
+
+  header {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .logo-port {
+    height: 45px;
+  }
+}
