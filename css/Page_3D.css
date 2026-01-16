@@ -516,4 +516,169 @@ margin-bottom: 60px;
   font-size: 0.70rem;
   font-weight: 500;
   text-align: right;
+
 }
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   RESPONSIVE – TABLETTE
+========================= */
+@media screen and (max-width: 1024px) {
+
+  header {
+    padding: 20px;
+  }
+
+  .titre3D_img {
+    width: 360px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .phraseaccr2 {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .image-gallery {
+    gap: 40px;
+  }
+
+  .about-me-popup {
+    width: 70%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+}
+
+/* =========================
+   RESPONSIVE – MOBILE
+========================= */
+@media screen and (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: row;       /* menu reste horizontal */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  .titre3D_img {
+    width: 280px;
+  }
+
+  .phraseaccr2 {
+    font-size: 15px;
+    padding: 16px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Galerie : 1 card par ligne */
+  .image-gallery {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .image-card {
+    max-width: 100%;
+  }
+
+  .image-frame {
+    height: 240px;
+  }
+
+  .card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .card-btn {
+    align-self: flex-start;
+  }
+
+  /* Pop-up plein écran */
+  .about-me-popup {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .popup-body {
+    font-size: 1rem;
+  }
+
+  .footer-end-content {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
+}
+
+/* =========================
+   PETITS TÉLÉPHONES
+========================= */
+@media screen and (max-width: 480px) {
+
+  .titre3D_img {
+    width: 220px;
+  }
+
+  .phraseaccr2 {
+    font-size: 14px;
+  }
+
+  .image-frame {
+    height: 200px;
+  }
+
+  .card-title {
+    font-size: 0.9rem;
+  }
+
+  .card-btn {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+
+  .footer-left img {
+    width: 14px;
+  }
+}
+
