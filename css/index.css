@@ -264,4 +264,159 @@ body {
   font-size: 1rem;
   color: #1e1a1a;
   margin-top: 25px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   RESPONSIVE – TABLETTE
+========================= */
+@media screen and (max-width: 1024px) {
+
+  header {
+    padding: 20px;
+  }
+
+  main {
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px;
+  }
+
+  .intro {
+    max-width: 100%;
+  }
+
+  .intro h1 {
+    font-size: 2.4rem;
+  }
+
+  .projects {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .projects h3 {
+    font-size: 1.8rem;
+  }
+
+  /* Pop-up plus large */
+  .about-me-popup {
+    width: 70%;
+  }
+}
+
+/* =========================
+   RESPONSIVE – MOBILE
+========================= */
+@media screen and (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: row;      /* ← reste horizontal */
+    justify-content: center;
+    flex-wrap: wrap;          /* ← évite que ça déborde */
+    gap: 15px;
+  }
+
+  nav ul li a {
+    font-size: 0.95rem;
+  }
+
+
+  main {
+    padding: 20px;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .intro p {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .projects h3 {
+    text-align: center;
+  }
+
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Pop-up en plein écran */
+  .about-me-popup {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .popup-body {
+    font-size: 1rem;
+  }
+}
+
+/* =========================
+   PETITS TÉLÉPHONES
+========================= */
+@media screen and (max-width: 480px) {
+
+  .intro h1 {
+    font-size: 1.6rem;
+  }
+
+  .projects h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-list > li > a {
+    font-size: 1.1rem;
+  }
+
+  .popup-image img {
+    width: 100px;
+  }
 }
