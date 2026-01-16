@@ -705,3 +705,30 @@ width: 80%;
     width: 14px;
   }
 }
+
+
+
+
+/* ===== FIX RESPONSIVE TEXTE UI/UX ===== */
+@media screen and (max-width: 768px) {
+
+  .phraseaccr4 {
+    width: 100%;
+    max-width: 100%;
+    padding: 14px 14px;
+    font-size: 14px;
+    line-height: 1.6;
+
+    text-align: left;          /* évite débordements */
+    hyphens: none;
+    word-break: break-word;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .phraseaccr4 {
+    font-size: 13.5px;
+    padding: 12px;
+  }
+}
