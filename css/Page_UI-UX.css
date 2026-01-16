@@ -521,4 +521,187 @@ width: 80%;
   font-size: 0.70rem;
   font-weight: 500;
   text-align: right;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   RESPONSIVE – TABLETTE
+========================= */
+@media screen and (max-width: 1024px) {
+
+  header {
+    padding: 20px;
+  }
+
+  .titreUX-UI_img {
+    width: 380px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .phraseaccr4 {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .image-gallery {
+    gap: 40px;
+  }
+
+  .image-card {
+    max-width: 100%;
+  }
+
+  .about-me-popup {
+    width: 70%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+}
+
+/* =========================
+   RESPONSIVE – MOBILE
+========================= */
+@media screen and (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: row;          /* menu horizontal */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav ul li a {
+    font-size: 0.95rem;
+  }
+
+  .titreUX-UI_img {
+    width: 300px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .phraseaccr4 {
+    font-size: 15px;
+    padding: 15px;
+    text-align: justify;
+  }
+
+  .image-gallery {
+    grid-template-columns: 1fr;   /* 1 card par ligne */
+    gap: 30px;
+  }
+
+  .image-frame {
+    height: 260px;
+  }
+
+  .card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .card-title {
+    font-size: 0.95rem;
+  }
+
+  .card-btn {
+    align-self: flex-start;
+    font-size: 0.85rem;
+  }
+
+  .about-me-popup {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .popup-body {
+    font-size: 1rem;
+  }
+
+  .footer-end-content {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
+}
+
+/* =========================
+   PETITS TÉLÉPHONES
+========================= */
+@media screen and (max-width: 480px) {
+
+  .titreUX-UI_img {
+    width: 240px;
+  }
+
+  .phraseaccr4 {
+    font-size: 14px;
+  }
+
+  .image-frame {
+    height: 220px;
+  }
+
+  .card-title {
+    font-size: 0.9rem;
+  }
+
+  .card-btn {
+    font-size: 0.8rem;
+    padding: 7px 10px;
+  }
+
+  .popup-image img {
+    width: 100px;
+  }
+
+  .footer-left img {
+    width: 14px;
+  }
 }
